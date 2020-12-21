@@ -8,10 +8,35 @@
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
+    
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <ion-chip>
+    <ion-icon name="heart" color="dark"></ion-icon>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+  <h2>Pick the date: </h2>
+  <ion-datetime value="2019-10-01T15:43:40.394Z" 
+  display-timezone="utc"></ion-datetime>
   <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-spinner name="lines-small"></ion-spinner>
+ 
+  <ion-progress-bar type="indeterminate"></ion-progress-bar>
+
+  <ion-searchbar showCancelButton="always"></ion-searchbar>
+  
 </ion-content>
+<!-- Footer without a border -->
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Footer - No Border</ion-title>
+  </ion-toolbar>
+</ion-footer>
